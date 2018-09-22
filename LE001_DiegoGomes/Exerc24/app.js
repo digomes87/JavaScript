@@ -10,15 +10,16 @@ b = Number(prompt("Digite o valor de B: "));
 c = Number(prompt("Digite o valor de C: "));
 
 
-if ( a > (b + c))
+if ( a > (b + c)) {
     alert("A é valido");
-
-if ( b > (a + c))
+}
+else if ( b > (a + c)) {
     alert("B é valido")
-
-if ( c > (a + b))
+}
+else ( c > (a + b))
+{
     alert("C é valido");
-
+}
 // envindo msg pro HTML
 // noinspection JSAnnotator
 document.getElementById("par_saida") = "Pode formar um Trinagulo";
