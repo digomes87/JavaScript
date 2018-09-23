@@ -5,18 +5,27 @@
  Consultar colegas, acrdito q esta errada !
 */
 
-var a1 = 0,
-    n = 0,
-    r = 0,
-    an = 0;
+var n = 0,
+    a1 = 0,
+    r = 0;
+    termo = 0,
+    soma = 0,
+    listaPA = "";
 
-a1 = Number(prompt("Informe um valor para o primeiro Termo:"));
-n = Number(prompt("Informe o numero de termos na progressão: "));
-r = Number(prompt("Informe a razão da progressão: "));
+// Leitura de n, a1 e r 
+n = Number(prompt("Número de termos da P.A.?"));
+a1 = Number(prompt("Primeiro termo?"));
+r = Number(prompt("Razão?"));
 
-an = a1 + (n - 1) * r;
+termo = a1;  // primeiro termo
 
+// Loop para gerar os n termos
+while (n > 0){
+    soma += termo;  // soma dos termos
+    listaPA += termo + " "; // a1 a2 a3 ...
+    termo += r;  // próximo termo
+    n--;
+}
 
-
-
-document.getElementById("par_saida").innerHTML = "Valores somados: "+an;
+// Apresenta os valores no documento html, elemento par_saida
+document.getElementById("par_saida").innerHTML = "Soma dos  termos: " + soma + "<br> P.A.:{ " + listaPA + "}";
