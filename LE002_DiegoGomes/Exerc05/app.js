@@ -21,18 +21,21 @@ var choose;
 alert("Vamos listar 4 opções de exibitação da tabela ASCII\n");
 choose = Number(prompt("\n[1] para exibir a tabela ASCII \n [2] para exibir a tabela ASCII estendida \n [3] para exibir a ASCII completa \n [4] Finaliza o Programa"));
 
-if (choose == 1){
-    document.write("TABELA ASCII");
-    document.write("<table border=1>");
-    document.write("<tr><td>caracter</td><td>decimal</td><td>octal</td><td>hexadecimal</td><td>binario</td></tr>");
-        for (decimal = 0;  decimal<=127; decimal++){
-            document.write("<tr><td>",String.fromCharCode(decimal),"</td>");
-            document.write("<td>",decimal,"</td>");
-            document.write("<td>",decimal.toString(8),"</td>");
-            document.write("<td>",decimal.toString(16),"</td>");
-            document.write("<td>",decimal.toString(2),"</td></tr>");
-        }
-}else if( choose == 2){
+switch(choose){
+    case 1:
+        document.write("TABELA ASCII");
+        document.write("<table border=1>");
+        document.write("<tr><td>caracter</td><td>decimal</td><td>octal</td><td>hexadecimal</td><td>binario</td></tr>");
+            for (decimal = 0;  decimal<=127; decimal++){
+                document.write("<tr><td>",String.fromCharCode(decimal),"</td>");
+                document.write("<td>",decimal,"</td>");
+                document.write("<td>",decimal.toString(8),"</td>");
+                document.write("<td>",decimal.toString(16),"</td>");
+                document.write("<td>",decimal.toString(2),"</td></tr>");
+            }
+            break;
+
+    case 2:
         document.write("TABELA ASCII Estendida");
         document.write("<table border=1>");
         document.write("<tr><td>caracter</td><td>decimal</td><td>octal</td><td>hexadecimal</td><td>binario</td></tr>");
@@ -43,23 +46,27 @@ if (choose == 1){
                 document.write("<td>",decimal.toString(16),"</td>");
                 document.write("<td>",decimal.toString(2),"</td></tr>");
             }
-}else if (choose == 3) {
+            break;
+    case 3:
+        document.write("TABELA ASCII Completa");
+        document.write("<table border=1>");
+        document.write("<tr><td>caracter</td><td>decimal</td><td>octal</td><td>hexadecimal</td><td>binario</td></tr>");
+        for (decimal = 0; decimal <= 255; decimal++) {
+            document.write("<tr><td>", String.fromCharCode(decimal), "</td>");
+            document.write("<td>", decimal, "</td>");
+            document.write("<td>", decimal.toString(8), "</td>");
+            document.write("<td>", decimal.toString(16), "</td>");
+            document.write("<td>", decimal.toString(2), "</td></tr>");
+        }
+        break;
 
-    document.write("TABELA ASCII Completa");
-    document.write("<table border=1>");
-    document.write("<tr><td>caracter</td><td>decimal</td><td>octal</td><td>hexadecimal</td><td>binario</td></tr>");
-    for (decimal = 0; decimal <= 255; decimal++) {
-        document.write("<tr><td>", String.fromCharCode(decimal), "</td>");
-        document.write("<td>", decimal, "</td>");
-        document.write("<td>", decimal.toString(8), "</td>");
-        document.write("<td>", decimal.toString(16), "</td>");
-        document.write("<td>", decimal.toString(2), "</td></tr>");
-    }
-}else if (choose == 4){
-    document.write("Fecho, já Erra");
-
-}else{
-    document.write("Aí não né amigo, me ajuda a te ajudar, de 1 a 4 apenas essas opçoes ;)");
+    case 4:
+    
+        document.write("Fecho, já Erra, Programa Encerrado !!");
+        break;
+    
+    default:
+        document.write("<img src='http://www.museudememes.com.br/wp-content/uploads/2018/03/29715197_1951464238500504_5405884114941247488_n.jpg' height='600' width='600'>");    
+        break;
 }
-
 document.write("</table>");
