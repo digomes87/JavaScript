@@ -39,7 +39,6 @@ while (i != 0){
     i = Number(prompt("Digite 0 para encerrar os votos, caso contrario, continue votando!"));
 }
 
-
 if((a > b) && (a > c)){
     cv = a;
 }
@@ -53,7 +52,6 @@ else{
 }
 
 vtv = a + b + c;
-
 vt = vtv + vb + vn;
 
 if((vb + vn) > a + b + c){

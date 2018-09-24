@@ -42,7 +42,6 @@ n = Number(prompt("Digite um Número:"));
 while (a * a <= n){
     a++;
 }
-
 a--;
 
 b = n / a;
@@ -62,7 +61,5 @@ if (decimais_d.indexOf(".") != -1){
         decimais_d = decimais_d.substr(decimais_d.indexOf(".")+ 1);
     }
 }
-
 e = (c + d) / 2;
-
 document.getElementById("par_saida").innerHTML = "A raiz: "+n+ " e: "+e;

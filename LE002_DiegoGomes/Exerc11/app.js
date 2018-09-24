@@ -18,7 +18,6 @@ var n = 1,
     fti = 0,
     i = 0;
 
-
 e = Number(prompt("Quantidade de numeros na series? "));
 fti = n;
 
@@ -29,7 +28,6 @@ for (i = e; i >=0; i--){
 
         show += ","+ ft;
     }
-
     fti++;
 }
 

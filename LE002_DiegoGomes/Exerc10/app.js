@@ -28,5 +28,4 @@ function calculando()
         alert("Não, não, não, Isso esta errado !!!: Tem que ser um numero inteiro positivo.");
     }
 }
-
 calculando();

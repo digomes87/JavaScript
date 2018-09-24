@@ -12,7 +12,6 @@ var maior = 0,
 // Loop para ler valores até que seja informado -1
 while (valor != -1){
     valor = Number(prompt("Informe um valor (-1 termina):"));
-
     // Considerar apenas o inteiros positivos
     // Aqui estamos considerando zero neutro
     // ou seja, nem positivo nem negativo

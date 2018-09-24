@@ -21,5 +21,3 @@ for (i=0; i < n; i++){
 }
 
 document.getElementById("par_saida").innerHTML = "Soma dos  " + n + " primeiros múltiplos de " + k + "=" + soma;
-
-

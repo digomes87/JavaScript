@@ -32,6 +32,6 @@ function ePrimo() {
     }
 
     else{
-        document.getElementById("msg").innerHTML = "brodí !!!, nem número é isso aí !!";
+        document.getElementById("msg").innerHTML = "brodí !!!, nem número isso aí é !!";
     }
 }
