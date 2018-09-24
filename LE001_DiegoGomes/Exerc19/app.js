@@ -11,9 +11,7 @@ notaUm = Number(prompt("Informe a primeira Nota:"));
 notaDois = Number(prompt("Informe a segunda Nota: "));
 notaTres = Number(prompt("Informe a Terceira Nota: "));
 
-
-
+//calculando a media
 media = 3 /((1/notaUm)+(1/notaDois)+(1/notaTres));
-//media =  (notaUm+notaDois+notaTres)/3;
 
 document.getElementById("resposta").innerHTML = "A media é : " + media;

@@ -22,4 +22,4 @@ else ( c > (a + b))
 }
 // envindo msg pro HTML
 // noinspection JSAnnotator
-document.getElementById("par_saida") = "Pode formar um Trinagulo";
+document.getElementById("par_saida").innerHTML = "Pode formar um Trinagulo";

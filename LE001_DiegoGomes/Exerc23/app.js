@@ -2,8 +2,7 @@ var salario = 0,
     reajuste = 0,
     salarioF = 0;
 
-    salario = Number(prompt("Digite seu salario"));
-
+salario = Number(prompt("Digite seu salario"));
 
 if (salario < 945) {
     reajuste = (salario * 25) / 100;

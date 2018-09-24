@@ -9,7 +9,6 @@ var pagamento,
     compra,
     taxa;
 
-
 compra = 425;
 
 alert("Valor da Sua compra: "+compra+" RS");

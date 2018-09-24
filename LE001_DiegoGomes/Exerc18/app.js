@@ -6,17 +6,20 @@
 
 var a, b;
 
-a = Number(prompt("Informe um valor: "));
-b = Number(prompt("Informe ou numero: "));
+a = Number(prompt("Informe um numero para A: "));
+b = Number(prompt("Informe um numero para B: "));
 
 alert("Variavel A possui: "+a);
 alert("Variavel B possui: "+b);
 
 alert("Aqui iremos trocar os valores de A e B sem uma terceira varialvel");
 
-a = a + b
-b = a - b
-a = a - b
+// a = a + b
+// b = a - b
+// a = a - b
+
+//ES6 ja facilita a vida pra fazer o xor
+[a,b] = [b,a]
 
 alert("Agora Valor de A: "+a);
 alert("Agora valor de B: "+b);

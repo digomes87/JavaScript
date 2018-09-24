@@ -13,4 +13,4 @@ var n1 = 2,
 alert(" Nota1: "+n1+"\n Nota2: "+n2+"\n Nota3: "+n3+"\n Nota4: "+n4);
 
 media = (n1+n2+n3+n4)/4;
-document.getElementById("par_saida").innerText = "Media podenrada: "+media;
+document.getElementById("par_saida").innerHTML = "Media podenrada: "+media;

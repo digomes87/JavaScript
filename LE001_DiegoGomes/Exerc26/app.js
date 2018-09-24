@@ -16,11 +16,13 @@ if ((sexo == 'F') || (sexo = 'f')){
 
     msg = "Teu peso ideal é: "+pesoIdeal.toFixed(2);
 }
-
-if ((sexo == 'M') || (sexo == 'm')){
+else if ((sexo == 'M') || (sexo == 'm')){
     altura = Number(prompt("Digite tua altura: ex 1.50"));
     pesoIdeal = parseFloat((72.7 * altura) - 58);
     msg = "Teu peso Ideial é: "+pesoIdeal.toFixed(2);
+}
+else{
+    msg = "Valor digitado incorreto ou fora da opções.";
 }
 
 
