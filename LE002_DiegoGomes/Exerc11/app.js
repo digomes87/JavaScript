@@ -10,26 +10,40 @@ qualquer fazendeiro cujo custo ultrapasse R$ 10000,00 recebe um desconto de 12% 
  Número de inscrição do fazendeiro, tipo de pulverização (código de 1 a 4) e a área a ser pulverizada (inteiro).
 */
 
-var n = 1,
-    e = 0,
-    x = 0,
-    ft = 0,
-    show = "",
-    fti = 0,
-    i = 0;
+var i = 0,
+    acre = 0,
+    desconto = 0,
+    codigo = 0,
+    cacre = 0;
 
-e = Number(prompt("Quantidade de numeros na series? "));
-fti = n;
+codigo = Number(prompt("Codigo do fazendeiro"));
 
-for (i = e; i >=0; i--){
-    for (x = fti; x > 0; x){
-        ft = 1 / (x * x--);
-        x--;
-
-        show += ","+ ft;
+while(codigo != 9999){
+    
+    acre = Number(prompt("Quantos acres?"));
+    i = Number(prompt("1 = 50 per acre; 2 = 100 per acre; 3 = 150 per acre; 4 = 250 per acre"));
+    
+    switch(i){
+        case 1:
+            cacre = acre * 50;
+            break;
+        case 2:
+            cacre = acre * 100;
+            break;
+        case 3:
+            cacre = acre * 150;
+            break;
+        case 4:
+            cacre = acre * 250;
+            break;
     }
-    fti++;
+    if(acre > 100)
+        desconto = cacre - ((10/100) * cacre);
+    
+    if(desconto > 10000)
+        desconto = desconto - ((12/100) * desconto);
+    
+    document.getElementById("par_saida").innerHTML = desconto + " Codigo: " + codigo;
+    
+    codigo = Number(prompt("Codigo 9999 para encerrar a operação; Caso contrario insira o codigo do fazendeiro novamente.")); 
 }
-
-
-document.getElementById("par_saida").innerHTML = "Sequencia  encontrada: " +show;

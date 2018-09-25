@@ -16,6 +16,10 @@
     Fonte usada: https://www.ascii-code.com
 */
 
+
+//https://www.indeed.com.br/viewjob?jk=b327a584873f022d&tk=1co6qde3pd44r803&from=serp&vjs=3
+//
+
 var choose;
 
 alert("Vamos listar 4 opções de exibitação da tabela ASCII\n");
@@ -62,11 +66,11 @@ switch(choose){
 
     case 4:
     
-        document.write("Fecho, já Erra, Programa Encerrado !!");
+        document.write("Fecho, já Era, Programa Encerrado !!");
         break;
     
     default:
-        document.write("<img src='http://www.museudememes.com.br/wp-content/uploads/2018/03/29715197_1951464238500504_5405884114941247488_n.jpg' height='600' width='600'>");    
+        document.write("<img src='chapolin.jpg' height='600' width='600'>");    
         break;
 }
 document.write("</table>");
